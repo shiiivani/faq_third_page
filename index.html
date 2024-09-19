@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ-videos</title>
+
+    <!-- Bootstrap CSS from jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- external css link -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header class="position-relative">
+        <div class="container d-lg-block d-none">
+            <button class="logo-btn rounded-pill mt-4 py-1 px-2 border-0">
+                <img src="./assets/logo.png" alt="logo" width="100">
+            </button>
+        </div>
+        <nav class="navbar d-lg-block d-md-block d-none fixed-top">
+            <ul>
+                <li class="active">Kiranewala</li>
+                <li>Home</li>
+                <li>Buy or Rent</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <nav class="mobile-navbar fixed-top navbar-expand-lg py-3 px-md-5 d-lg-none d-md-none">
+            <div class="container-fluid gap-md-5">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logo.png" alt="nav-logo" style="height: 37px;">
+                </a>
+                <span class="navbar-toggler border-0 bg-transparent" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <input id="checkbox" type="checkbox" />
+                    <label class="toggle" for="checkbox">
+                        <div id="bar1" class="bars"></div>
+                        <div id="bar2" class="bars"></div>
+                        <div id="bar3" class="bars"></div>
+                        <div id="bar4" class="bars"></div>
+                        <div id="bar5" class="bars"></div>
+                    </label>
+                </span>
+                <div class="collapse navbar-collapse text-center" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5">
+                        <li class="nav-item mt-5">
+                            <a class="header-link text-decoration-none" aria-current="page" href="#">Career</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <a class="header-link text-decoration-none" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <a class="header-link text-decoration-none" href="#">Buy or Rent</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <a class="header-link text-decoration-none" href="#">About</a>
+                        </li>
+                        <li class="nav-item mt-3 mt-lg-0 mt-md-0">
+                            <a class="header-link text-decoration-none" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-white">
+
+        <section class="pt-5 pb-3 d-lg-block d-md-block d-none">
+            <div class="row align-items-center">
+                <div class="col-10">
+                    <div class="title-text">Frequently Asked Questions ?</div>
+                    <div class="mt-3 sub-title-text">Get step-by-step guidance on setting up your account and listing
+                        properties.</div>
+                    <div class="sub-title-text">Start your journey with Realezi today.</div>
+                </div>
+                <div class="col-2">
+                    <img src="./assets/faq.png" alt="faq" height="190" width="190">
+                </div>
+            </div>
+        </section>
+
+        <section class="d-lg-none d-md-none pt-5 pb-4 top-section text-center">
+            <div class="title-text">Frequently Asked Questions</div>
+            <div class="sub-title-text mt-2">Get step-by-step guidance on setting up your account and listing
+                properties. Start your journey with Realezi today.</div>
+        </section>
+
+        <section class="pb-3">
+            <nav class="second-navbar-container">
+                <button class="scroll-left"><i class="fas fa-chevron-left fa-sm"></i></button>
+                <nav class="second-navbar">
+                    <ul>
+                        <li>Security & Privacy</li>
+                        <li>Partnerships & Collaborations</li>
+                        <li>Technical Support</li>
+                        <li>Listing Performance</li>
+                        <li class="active">Videos</li>
+                    </ul>
+                </nav>
+                <button class="scroll-right"><i class="fas fa-chevron-right"></i></button>
+            </nav>
+        </section>
+
+        <section class="py-lg-5 py-md-5 pb-5 pt-3">
+            <div class="row">
+                <div class="col-lg-4 col-12 d-none d-lg-block d-md-block">
+                    <div class="left-side">
+                        <button class="left-side-back-btn text-start w-100 border-0 mb-3">
+                            <i class="fas fa-arrow-left me-2"></i> Back
+                        </button>
+                        <ul style="list-style-type: disc;">
+                            <li class="mt-3 left-side-points-title-text">What is Realezi, and how does it work?</li>
+                            <li class="mt-3 left-side-points-text">How can I optimize my property listings on Realezi to
+                                improve search engine visibility and attract more potential buyers or renters through
+                                organic searches ?</li>
+                            <li class="mt-3 left-side-points-text"> What are the benefits of using Realezi for property
+                                listings ?</li>
+                            <li class="mt-3 left-side-points-text">What procedures should I follow to update my billing
+                                information, and how can I review and manage my subscription plans and payment history
+                                on Realezi ?</li>
+                            <li class="mt-3 left-side-points-text">What payment methods are accepted on Realezi ?</li>
+                            <li class="mt-3 left-side-points-text">How do I sign up for an account on Realezi ?</li>
+                            <li class="mt-3 left-side-points-text">How can I integrate my Realezi account with social
+                                media platforms to share property listings, and what are the best strategies for
+                                leveraging social media to boost engagement ?</li>
+                            <li class="mt-3 left-side-points-text"> Does Realezi offer partnership opportunities for
+                                agents or brokers ?</li>
+                            <li class="mt-3 left-side-points-text"> Does Realezi offer partnership opportunities for
+                                agents or brokers ?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 d-lg-none d-md-none">
+                    <button class="mt-3 left-side-points-title-text accordion-toggle">
+                        What is Realezi, and how does it work?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+
+                    <div class="accordion-content">
+                        <ul style="list-style-type: disc;">
+                            <li class="mt-3 left-side-points-text">How can I optimize my property listings on Realezi to
+                                improve search engine visibility and attract more potential buyers or renters through
+                                organic searches?</li>
+                            <li class="mt-3 left-side-points-text">What are the benefits of using Realezi for property
+                                listings?</li>
+                            <li class="mt-3 left-side-points-text">What procedures should I follow to update my billing
+                                information, and how can I review and manage my subscription plans and payment history
+                                on Realezi?</li>
+                            <li class="mt-3 left-side-points-text">What payment methods are accepted on Realezi?</li>
+                            <li class="mt-3 left-side-points-text">How do I sign up for an account on Realezi?</li>
+                            <li class="mt-3 left-side-points-text">How can I integrate my Realezi account with social
+                                media platforms to share property listings, and what are the best strategies for
+                                leveraging social media to boost engagement?</li>
+                            <li class="mt-3 left-side-points-text">Does Realezi offer partnership opportunities for
+                                agents or brokers?</li>
+                            <li class="mt-3 left-side-points-text">Does Realezi offer partnership opportunities for
+                                agents or brokers?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 col-12 mt-4 mt-md-2 mt-lg-0">
+                    <div class="d-lg-block d-none">
+                        <div class="faq-question-text">What is Realezi, and how does it work?</div>
+
+                        <div class="mt-4">
+                            <img src="./assets/section-1.png" alt="section-1" class="w-100">
+                        </div>
+                    </div>
+
+                    <div class="d-lg-none hero-card">
+                        <div class="mt-4">
+                            <div class="faq-question-text">What is Realezi, and how does it work?</div>
+                            <img src="./assets/section-1.png" alt="section-1" class="w-100 mt-2"
+                                style="border-radius: 20px;">
+                            <div class="text-center mt-4">
+                                <button class="play-video-btn w-100">Watch now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card note-card mt-4 p-3">
+                        <div class="faq-question-text">Note:</div>
+                        <div class="card-body">
+                            <ul style="list-style-type: disc;">
+                                <li>If you're an organization (not an institute or school), please list opportunities
+                                    using your official email address that includes your company’s domain name (e.g.,
+                                    support@realezi.com).</li>
+                                <li class="mt-2">College or student organizers can list an unlimited number of
+                                    opportunities for free on Realezi.</li>
+                                <li class="mt-2">Businesses and startups can list up to 5 opportunities for free from a
+                                    single account. If you need to publish more, please refer to the pricing section for
+                                    additional information on our paid listing options.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer section -->
+    <footer class="px-md-5 px-1 px-lg-5">
+        <div class="container">
+            <div class="row flex-wrap">
+                <div class="card-group flex-wrap" style="margin-top: 10%;">
+                    <div class="col-12 col-lg-3 flex-column justify-content-between">
+                        <div class="content h-100">
+                            <div class="image d-flex justify-content-center d-lg-block">
+                                <img src="./assets/logo.png" alt="">
+                            </div>
+                            <div class="detail pt-lg-4">
+                                <p
+                                    class="m-0 text-white fw-normal fs-4 text-center text-lg-start py-3 py-lg-0 px-4 mx-auto">
+                                    Connecting You to Your
+                                    Dream Property.</p>
+                                <div class="p-0 d-block d-lg-inline-block pt-lg-5 text-center px-4">
+                                    <button type="button" class="btn btn-outline-light mt-3 md-mt-5 px-5 py-2 fs-5">Try
+                                        it
+                                        yourself</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-4 col-lg-9 pt-lg-0">
+                        <div class="content d-flex flex-wrap h-100">
+                            <div class="menu-box col-12 pt-5 col-md-3 col-lg-3 pt-lg-0">
+                                <div class="main-heading">
+                                    <h2 class="text-white text-capitalize fs-3 fw-normal m-0">company</h2>
+                                    <hr class="text-white" />
+                                </div>
+                                <ul class="m-0 p-0 pt-3 list-unstyled">
+                                    <li class="pb-2">
+                                        <a href="#" class="footer-link text-decoration-none">About us</a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <a href="#" class="footer-link text-decoration-none">Blog</a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <a href="#" class="footer-link text-decoration-none">Career</a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <a href="#" class="footer-link text-decoration-none">Contact Support</a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <a href="#" class="footer-link text-decoration-none">Get in touch</a>
+                                    </li>
+                                    <li class="pb-2">
+                                        <a href="#" class="footer-link text-decoration-none">FAQs</a>
+                                    </li>
+                                </ul>
+                                <div class="mt-3 text-start">
+                                    <button class="d-flex align-items-center hiring-Btn">
+                                        <span class="mx-2">We are hiring</span>
+                                        <canvas id="partyPopper"></canvas>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="menu-box col-12 pt-5 col-md-6 col-lg-6 pt-lg-0">
+                                <div class="main-heading">
+                                    <h2 class="text-white text-capitalize fs-3 fw-normal m-0">Solutions</h2>
+                                    <hr class="text-white" />
+                                </div>
+                                <div class="row px-3 px-lg-0 px-md-0">
+                                    <ul class="list-unstyled m-0 p-0 pt-3 col-12 col-lg-6">
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">Find a Right
+                                                Property</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">Sell or Rent Your
+                                                Property</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">Build Your Home From
+                                                Scratch&nbsp;</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">Interior Designing
+                                                &amp;
+                                                Decor</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">Solar Panel</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">Home Loans</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-unstyled m-0 p-0 pt-0 pt-lg-3 pt-md-3 col-12 col-lg-6">
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">Legal Aid</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">Porter Services</a>
+                                        </li>
+                                        <li class="pb-2">
+                                            <a href="#" class="footer-link text-decoration-none">For Business</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="menu-box col-12 pt-5 col-md-3 col-lg-3 pt-lg-0">
+                                <div class="main-heading">
+                                    <h2 class="text-white text-capitalize fs-3 fw-normal m-0">Community</h2>
+                                    <hr class="text-white" />
+                                </div>
+                                <ul class="list-unstyled m-0 p-0 pt-3">
+                                    <li class="pb-2">
+                                        <div class="btn p-0">
+                                            <button
+                                                class="btn-light refer-Btn rounded-pill mb-3 d-flex align-items-center text-nowrap">Refer
+                                                &amp; Earn
+                                                <span class="ms-1 mb-1">
+                                                    <img src="./assets/animation/fire-animation.gif" alt=""
+                                                        width="22px">
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="pb-2">
+                                        <a href="#" class="footer-link text-decoration-none">Realezi Community</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="footer-link text-decoration-none">Customers</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-12" style="margin-top: -5%;">
+                                <div class="row align-items-center justify-content-end">
+                                    <div
+                                        class="col-lg-8 col-md-8 col-12 d-flex justify-content-end gap-2 pt-md-0 pt-lg-0 pt-5">
+                                        <button
+                                            class="btn appstore-btn d-flex align-items-center justify-content-center gap-2">
+                                            <svg class="appstore-icon" fill="currentcolor"
+                                                viewBox="-52.01 0 560.035 560.035" xmlns="http://www.w3.org/2000/svg"
+                                                height="1.5em">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <path
+                                                        d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <div>
+                                                <p class="appstore-text mb-0 mt-3 text-nowrap">Download on the</p>
+                                                <p class="appstore-text text-start text-nowrap">App Store</p>
+                                            </div>
+                                        </button>
+                                        <button
+                                            class="btn playstore-btn d-flex align-items-center justify-content-center gap-2">
+                                            <svg class="playstore-icon" viewBox="0 0 512 512" height="1.5em"
+                                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+                                                </path>
+                                            </svg>
+                                            <div>
+                                                <p class="playstore-text mb-0 mt-3 text-nowrap">GET IT ON</p>
+                                                <p class="playstore-text text-nowrap">Google Play</p>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center mx-auto align-items-center justify-content-center pt-5 pb-3">
+                    <a href="/"
+                        class="text-decoration-none col-12 col-md-1 d-flex justify-content-center footer-secondary-link text-nowrap">Privacy
+                        policies</a>
+                    <a href="/"
+                        class="text-decoration-none col-12 col-md-2 d-flex justify-content-center footer-secondary-link text-nowrap">Terms
+                        and conditions</a>
+                    <a href="/"
+                        class="text-decoration-none col-12 col-md-1 d-flex justify-content-center footer-secondary-link text-nowrap">Disclaimer</a>
+                </div>
+                <hr>
+                <div class="card-group d-flex gap-3 justify-content-between flex-wrap pt-3 gap-md-0 pb-2">
+                    <p class="m-0 text-white col-12 col-md-12 text-md-start text-center col-lg-3">©2024 Realezi. All
+                        rights
+                        reserved</p>
+                    <p class="text-white col-12 text-center col-md-6 col-lg-3 text-lg-center">Made with love
+                        <span class=""><img src="./assets/heart.png" alt="" class="ms-1 me-1 mb-1 mt-0"></span> from
+                        Realezi
+                    </p>
+                    <ul
+                        class="list-unstyled m-0 p-0 col-12 justify-content-center col-md-6 col-lg-3 d-flex gap-3 justify-content-lg-end">
+                        <li>
+                            <button class="social-media-btn facebook border-0">
+                                <img src="./assets/icons/facebook-icon.svg" alt="" class="social-media-icon">
+                                <span class="social-media-text">Facebook</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="social-media-btn linkedin border-0">
+                                <img src="./assets/icons/linkedin-icon.svg" alt="" class="social-media-icon">
+                                <span class="social-media-text">Linkedin</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="social-media-btn instagram border-0">
+                                <img src="./assets/icons/instagram-icon.svg" alt="" class="social-media-icon">
+                                <span class="social-media-text">Instagram</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="social-media-btn youtube border-0">
+                                <img src="./assets/icons/youtube-icon.svg" alt="" class="social-media-icon">
+                                <span class="social-media-text">YouTube</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/rive-canvas@latest/rive.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="./navbar.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
