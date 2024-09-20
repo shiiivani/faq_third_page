@@ -41,23 +41,6 @@ navbarItems.forEach((item) => {
   });
 });
 
-const accordionToggle = document.querySelector(".accordion-toggle");
-const accordionContent = document.querySelector(".accordion-content");
-const icon = document.querySelector(".accordion-toggle i");
-
-accordionToggle.addEventListener("click", function () {
-  // Toggle content visibility
-  if (accordionContent.style.display === "block") {
-    accordionContent.style.display = "none";
-    icon.classList.remove("fa-chevron-up");
-    icon.classList.add("fa-chevron-down");
-  } else {
-    accordionContent.style.display = "block";
-    icon.classList.remove("fa-chevron-down");
-    icon.classList.add("fa-chevron-up");
-  }
-});
-
 document.addEventListener("DOMContentLoaded", function () {
   const partyPopper = new rive.Rive({
     src: "./assets/animation/Party-popper.riv",
