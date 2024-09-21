@@ -285,14 +285,14 @@ ul {
 
 .scroll-left {
     left: 0px;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
 }
 
 .scroll-right {
     right: 0px;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
 }
 
 
