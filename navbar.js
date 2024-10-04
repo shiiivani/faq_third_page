@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     navBar.appendChild(hoverLine);
 
     gsap.set([slideLine, hoverLine], {
-      height: 30,
+      height: 32,
       position: "absolute",
-      bottom: 10,
+      bottom: 11,
       borderRadius: "15px",
       zIndex: 1,
       transformOrigin: "left center",

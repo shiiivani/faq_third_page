@@ -1,53 +1,54 @@
-const scrollLeftButton = document.querySelector(".scroll-left");
-const scrollRightButton = document.querySelector(".scroll-right");
-const navbar = document.querySelector(".second-navbar ul");
+document.addEventListener("DOMContentLoaded", function () {
+  // Select all instances of scroll buttons and navbar containers
+  const navContainers = document.querySelectorAll(".second-navbar-container");
 
-function updateScrollButtons() {
-  const isScrollable = navbar.scrollWidth > navbar.clientWidth;
-  scrollLeftButton.style.display = isScrollable ? "block" : "none";
-  scrollRightButton.style.display = isScrollable ? "block" : "none";
-}
+  navContainers.forEach((container) => {
+    const scrollLeftButton = container.querySelector(".scroll-left");
+    const scrollRightButton = container.querySelector(".scroll-right");
+    const navbar = container.querySelector(".second-navbar ul"); // updated to target 'ul'
 
-function scrollNavbar(direction) {
-  const scrollAmount = 100;
-  navbar.scrollBy({
-    left: direction === "left" ? -scrollAmount : scrollAmount,
-    behavior: "smooth",
-  });
-}
+    function updateScrollButtons() {
+      const isScrollable = navbar.scrollWidth > navbar.clientWidth;
+      // Show buttons regardless of scrollable state
+      scrollLeftButton.style.display = "block";
+      scrollRightButton.style.display = "block";
+      // Hide buttons if the navbar isn't scrollable
+      if (!isScrollable) {
+        scrollLeftButton.style.display = "none";
+        scrollRightButton.style.display = "none";
+      }
+    }
 
-scrollLeftButton.addEventListener("click", () => scrollNavbar("left"));
-scrollRightButton.addEventListener("click", () => scrollNavbar("right"));
+    function scrollNavbar(direction) {
+      const scrollAmount = 100;
+      navbar.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
 
-window.addEventListener("resize", updateScrollButtons);
-updateScrollButtons();
+    scrollLeftButton.addEventListener("click", () => scrollNavbar("left"));
+    scrollRightButton.addEventListener("click", () => scrollNavbar("right"));
 
-const navbarItems = document.querySelectorAll(".second-navbar li");
-
-navbarItems.forEach((item) => {
-  item.addEventListener("click", function () {
-    // Remove active class from all items
-    navbarItems.forEach((i) => i.classList.remove("active"));
-    
-    // Add active class to the clicked item
-    item.classList.add("active");
-
-    // Optional: Scroll to the clicked item (if needed)
-    const itemPosition = item.offsetLeft;
-    navbar.scrollTo({
-      left: itemPosition - 50, // Offset a bit for padding
-      behavior: "smooth"
-    });
+    window.addEventListener("resize", updateScrollButtons);
+    updateScrollButtons(); // Ensure buttons are properly displayed initially
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const partyPopper = new rive.Rive({
-    src: "./assets/animation/Party-popper.riv",
-    canvas: document.getElementById("partyPopper"),
-    autoplay: true,
-    onLoad: () => {
-      partyPopper.resizeDrawingSurfaceToCanvas();
-    },
+  const navbarItems = document.querySelectorAll(".second-navbar li");
+
+  navbarItems.forEach((item) => {
+    item.addEventListener("click", function () {
+      navbarItems.forEach((i) => i.classList.remove("active"));
+
+      item.classList.add("active");
+
+      const itemPosition = item.offsetLeft;
+      navbar.scrollTo({
+        left: itemPosition - 50,
+        behavior: "smooth",
+      });
+    });
   });
 });
